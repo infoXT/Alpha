@@ -24,6 +24,7 @@
 .nav-links{
     flex: 1;
     text-align: right;
+    
 }
 .nav-links>ul>li{
     list-style: none;
@@ -83,4 +84,23 @@
     transform: translate(-50%,-50%);
     color:#FFBD9B;
 }
-
+.about{
+    background: #DDDDDD;
+}
+.about>h2{
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 1em;
+}
+.links{
+    padding-left: 3em;
+    width: 30%;
+    
+}
+.about-acm{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    padding-top: 3rem;
+    line-height: 2;
+}
