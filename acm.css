@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
+}
+:root{
+    --very-dark-magenta: hsl(300,43%,22%);
+    --soft-pink:hsl(333,80%,67%);
+    --dark-grayish-magenta:hsl(303,10%,53%);
+    --light-grayish-magenta:hsl(300,24%,96%);
+    --white:hsl(0,0%,100%);
 }
 body{
     font-family: "Poppins",sans-serif;
@@ -111,12 +118,11 @@ body{
     padding-top: 3rem;
     line-height: 2;
 }
-.events{
-
-}
 .events h1{
     max-width: 10%;
     margin: 0 auto;
+    font-size: 3em;
+    padding-top: 1em;
 }
 .events p{
     color: hsl(229, 6%, 90%);
@@ -181,5 +187,30 @@ body{
 .box img{
     display: block;
     margin-left: auto;
+}
+.latest-blogs{
+    font-family: 'Spartan',sans-serif;
+    padding: 30px;
+}
+.latest-blogs .card{
+    background-color: var(--very-dark-magenta);
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+.latest-blogs h3{
+    color: #fff;
+}
+.latest-blogs .card small{
+    color: hsl(333,80%,67%);
+}
+.latest-blogs .card p{
+    color: #DDDDDD;
+}
+@media(min-width:769px){
+    .latest-blogs{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:20px;
+    }
 }
 
